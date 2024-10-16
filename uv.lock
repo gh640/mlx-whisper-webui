@@ -5,6 +5,9 @@ resolution-markers = [
     "python_full_version >= '3.13'",
 ]
 
+[manifest]
+constraints = [{ name = "numba", specifier = "~=0.60.0" }]
+
 [[package]]
 name = "aiofiles"
 version = "23.2.1"

@@ -8,3 +8,10 @@ dependencies = [
     "gradio>=5.1.0",
     "mlx-whisper>=0.3.0",
 ]
+
+[tool.uv]
+package = false
+constraint-dependencies = [
+    # To avoid installation error with numba==0.53.1
+    "numba~=0.60.0",
+]
